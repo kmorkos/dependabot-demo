@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "SLS-<insert ticket # here>"
+      prefix: "SLS-XXX"
     versioning-strategy: "lockfile-only"
     groups:
       npm-deps:
