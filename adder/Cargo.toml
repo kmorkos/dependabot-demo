@@ -1,0 +1,37 @@
+[package]
+name = "adder"
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+bitflags.workspace = true
+byteorder.workspace = true
+bytes.workspace = true
+chrono = { workspace = true }
+dashmap = { workspace = true }
+flume = { workspace = true }
+futures = { workspace = true }
+itertools = { workspace = true }
+latches = { workspace = true }
+jzon = { workspace = true }
+lockfree = { workspace = true }
+metrics = { workspace = true }
+parking_lot = { workspace = true }
+serde = { workspace = true }
+snafu = { workspace = true }
+sysinfo = { workspace = true }
+tokio-stream.workspace = true
+tokio-util.workspace = true
+tokio.workspace = true
+tonic.workspace = true
+tracing.workspace = true
+varinteger.workspace = true
+
+
+[dev-dependencies]
+assert_ok = { workspace = true }
+mockall = { workspace = true }
+rstest.workspace = true
+tempfile.workspace = true
+
