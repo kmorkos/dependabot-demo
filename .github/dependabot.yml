@@ -1,10 +1,6 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
@@ -16,7 +12,16 @@ updates:
       npm-deps:
         patterns:
           - "*"
-  - package-ecosystem: bundler
-    directory: "/ruby"
+  - package-ecosystem: cargo
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: weekly
+    commit-message:
+      prefix: "SLS-XXX"
+    versioning-strategy: lockfile-only
+    groups:
+      rust-dependencies:
+        patterns:
+          - "*"
+    allow:
+      - dependency-type: all
