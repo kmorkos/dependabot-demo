@@ -9,6 +9,13 @@ updates:
     directory: "/javascript"
     schedule:
       interval: "weekly"
+    commit-message:
+      prefix: "SLS-<insert ticket # here>"
+    versioning-strategy: "lockfile-only"
+    groups:
+      npm-deps:
+        patterns:
+          - "*"
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
